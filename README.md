@@ -1,4 +1,4 @@
-## Per eseguire questo servizio è necessario avere installato NodeJS e il compilatore TypeScript
+## Per eseguire questo servizio è necessario avere installato NodeJS, il compilatore TypeScript e Docker
 
 ## Script disponibili
 
