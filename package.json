@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "installFrontend": "cd frontend_exchange; npm install",
+    "installBackend": "cd backend_exchange; npm install",
+    "install": "npm run installFrontend; npm run installBackend",
+
+    "buildFrontend": "cd frontend_exchange; npm run compila",
+    "buildBackend": "cd backend_exchange; npm run build",
+    "build": "npm run buildFrontend; npm run buildBackend",
+
+    "start": "docker-compose up -d",
+
+    "complete": "npm run install; npm run build; npm start",
+
+    "stop": "docker-compose down"
+  }
+}
