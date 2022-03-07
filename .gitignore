@@ -28,3 +28,5 @@ frontend_exchange/yarn-error.log*
 
 #file js
 frontend_exchange/src/build/*.js
+
+.DS_Store
