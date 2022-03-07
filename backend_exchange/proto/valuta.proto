@@ -1,0 +1,19 @@
+syntax = "proto3"; //versione del buffer
+
+package convertiPackage;
+
+service ScambioValuta { //servizi che da il server
+    rpc converti (inputValuta) returns (outputValuta); //crea un todoItem
+}
+
+
+message inputValuta {
+    string from = 1;
+    string to = 2;
+    //float quantita_spesa = 2;
+    float quantitaSpesa = 3;
+}
+
+message outputValuta {  //messaggio che può inviare il server, sono i parametri dell'oggetto jason che viene mandato
+    float quantitaComprata = 1;
+}

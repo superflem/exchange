@@ -1,0 +1,29 @@
+.listTransactions
+{
+    background-color: blue;
+    width: 50%;
+    margin: auto;
+    opacity: 0.7;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding-bottom: 15px;
+}
+
+table
+{
+    width:80%;
+    margin:auto;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.dispari
+{
+    background-color: lightgray;
+}
+
+td, th
+{
+    border: 1px solid black;
+    height: 50px;
+}

@@ -1,0 +1,74 @@
+syntax = "proto3"; //versione del buffer
+
+package comunicazionePackage;
+
+service ComunicazioneServer { //servizi che da il server
+    rpc eseguiLogin (credenziali) returns (connessione); //crea una comunicazione
+    rpc eseguiDeposito (quantitaDeposito) returns (risultato);
+    rpc eseguiWithdraw (quantitaDeposito) returns (risultato);
+    rpc eseguiQuery (user) returns (risultatoQuery);
+    rpc eseguiSignup (signup) returns (risultato);
+    rpc eseguiBuy (compra) returns (risultato);
+    rpc eseguiList (inputLista) returns (outputLista);
+}
+
+message inputLista {
+    int32 utente = 1;
+    string valuta = 2;
+    string data = 3;
+}
+
+message outputLista {
+    bool isTuttoOk = 1;
+    string messaggio = 2;
+    string listaTransizioni = 3;
+}
+
+message compra {
+    int32 utente = 1;
+    float quantitaSpesa = 2;
+    string valuta = 3;
+}
+
+message signup {
+    string email = 1;
+    string password = 2;
+    string nome = 3;
+    string cognome = 4;
+    string iban = 5;
+}
+
+message credenziali {
+    string email = 1;
+    string password = 2;
+}
+
+message connessione {  //messaggio che può inviare il server, sono i parametri dell'oggetto json che viene mandato
+    bool isTuttoOk = 1;
+    string token = 2;
+    int32 utente = 3;
+    string nome = 4;
+}
+
+message quantitaDeposito {
+    int32 utente = 1;
+    float valore = 2;
+    string simbolo = 3;
+}
+
+message risultato {
+    bool isTuttoOk = 1;
+    string messaggio = 2; 
+}
+
+message user {
+    int32 utente = 1;
+}
+
+message risultatoQuery {
+    bool isTuttoOk = 1;
+    float euro = 2; 
+    float dollari = 3;
+    string messaggio = 4;
+    string nome = 5;
+}

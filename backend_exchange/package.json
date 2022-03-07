@@ -1,0 +1,44 @@
+{
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.5",
+    "@grpc/proto-loader": "^0.6.9",
+    "body-parser": "^1.19.2",
+    "concurrently": "^7.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "typescript-require": "^0.3.0",
+    "xml2js": "^0.4.23"
+  },
+  "scripts": {
+    "api": "node API/build/api.js",
+    "server": "node build/server_users.js",
+    "exchange": "node build/exchange.js",
+    "start": "concurrently \"npm run api\" \"npm run server\" \"npm run exchange\"",
+
+    "buildDatabase": "tsc --outDir ./build typescript/database.ts",
+    "buildServer": "tsc --outDir ./build typescript/server_users.ts",
+    "buildExchange": "tsc --outDir ./build typescript/exchange.ts",
+    "buildDeposit": "tsc --outDir ./build routes/deposit.ts",   
+    "buildSignup": "tsc --outDir ./build routes/signup.ts",
+    "buildWithdraw": "tsc --outDir ./build routes/withdraw.ts",
+    "buildList": "tsc --outDir ./build routes/listTransactions.ts",
+    "buildBuy": "tsc --outDir ./build routes/buy.ts",
+    "buildLogin": "tsc --outDir ./build routes/login.ts",
+    "buildQuery": "tsc --outDir ./build routes/query.ts",
+    "buildApi": "tsc --outDir ./API/build API/typescript/api.ts",
+    "buildALogin": "tsc --outDir ./API/build API/typescript/login.ts",
+    "buildASignup": "tsc --outDir ./API/build API/typescript/signup.ts",
+    "buildAVerifica": "tsc --outDir ./API/build API/typescript/verifica.ts",
+    "buildAQuery": "tsc --outDir ./API/build API/typescript/query.ts",
+    "buildALogout": "tsc --outDir ./API/build API/typescript/logout.ts",
+    "buildADeposit": "tsc --outDir ./API/build API/typescript/deposit.ts",
+    "buildAWithdraw": "tsc --outDir ./API/build API/typescript/withdraw.ts",
+    "buildABuy": "tsc --outDir ./API/build API/typescript/buy.ts",
+    "buildAList": "tsc --outDir ./API/build API/typescript/listTransactions.ts",
+    "build": "concurrently \"npm run buildDatabase\" \"npm run buildServer\" \"npm run buildExchange\" \"npm run buildDeposit\" \"npm run buildSignup\" \"npm run buildWithdraw\" \"npm run buildList\" \"npm run buildBuy\" \"npm run buildLogin\" \"npm run buildQuery\" \"npm run buildApi\" \"npm run buildALogin\" \"npm run buildASignup\" \"npm run buildAVerifica\" \"npm run buildAQuery\" \"npm run buildALogout\" \"npm run buildADeposit\" \"npm run buildAWithdraw\" \"npm run buildABuy\" \"npm run buildAList\""
+  }
+}

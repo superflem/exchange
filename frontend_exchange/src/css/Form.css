@@ -1,0 +1,64 @@
+label
+{
+    color:red;
+    font-size: 30px;
+}
+
+.testo
+{
+    width: 50%;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#bottone
+{
+    background-color: gold;
+    height: 40px;
+    width: 5%;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#bottone:hover, #bottoneInterno:hover
+{
+    background-color: red;
+}
+
+#bottoneInterno
+{
+    background-color: gold;
+    height: 40px;
+    width: 10%;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+select
+{
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.divForm
+{
+    background-color: blue;
+    width: 50%;
+    margin: auto;
+    opacity: 0.7;
+    border-radius: 10px;
+    margin-top: 15%;
+    padding-bottom: 15px;
+}
+
+#data
+{
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,30 @@
+backend_exchange/build/*.js
+backend_exchange/API/build/*.js
+backend_exchange/node_modules
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+frontend_exchange/node_modules
+frontend_exchange/.pnp
+frontend_exchange/.pnp.js
+
+# testing
+frontend_exchange//coverage
+
+# production
+frontend_exchange//build
+
+# misc
+frontend_exchange/.DS_Store
+frontend_exchange/.env.local
+frontend_exchange/.env.development.local
+frontend_exchange/.env.test.local
+frontend_exchange/.env.production.local
+
+frontend_exchange/npm-debug.log*
+frontend_exchange/yarn-debug.log*
+frontend_exchange/yarn-error.log*
+
+#file js
+frontend_exchange/src/build/*.js

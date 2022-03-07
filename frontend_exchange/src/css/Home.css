@@ -1,0 +1,19 @@
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+h2{
+    color:white;
+    font-size: 40px;
+}
+
+.divHome
+{
+    background-color: blue;
+    width: 50%;
+    margin: auto;
+    opacity: 0.7;
+    border-radius: 10px;
+    margin-top: 15%;
+}
