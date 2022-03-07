@@ -16,3 +16,6 @@ Se ci sono degli errori, bisogna lanciare il comando da amministratore
 
 ### `npm run stop`
 Ferma il docker
+
+### `npm run complete`
+Esegue tutti i precedenti script (tranne lo stop)
