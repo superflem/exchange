@@ -19,3 +19,4 @@ Ferma il docker
 
 ### `npm run complete`
 Esegue tutti i precedenti script (tranne lo stop)
+Può essere necessario lanciarlo come amministratore
