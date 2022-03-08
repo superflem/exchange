@@ -4,6 +4,10 @@ FROM node:16-alpine
 # cartella di lavoro
 WORKDIR /app
 
+COPY package.json .
+
+RUN npm install
+
 # copio il resto
 COPY . .
 
