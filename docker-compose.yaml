@@ -10,7 +10,12 @@ services:
       - data:/var/lib/postgresql/data # salvo i dati del database
 
 
-  
+  frontend_exchange: 
+    build: ./frontend_exchange
+    container_name: frontend_exchange_c
+    ports:
+      - '3000:3000'
+    stdin_open: true #fanno partire il container in modalità interattiva
   backend_exchange:
     build: ./backend_exchange
     container_name: backend_exchange_c
@@ -18,12 +23,6 @@ services:
       - '9000:9000'
       - '9001:9001'
       - '80:80'
-  frontend_exchange: 
-    build: ./frontend_exchange
-    container_name: frontend_exchange_c
-    ports:
-      - '3000:3000'
-    stdin_open: true #fanno partire il container in modalità interattiva
   
 volumes:
   data:
