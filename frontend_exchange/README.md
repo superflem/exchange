@@ -12,4 +12,4 @@ Compila tutti i file TypeScript (si possono compilare anche uno ad uno)
 
 ### `npm start`
 Esegue l'applicazione React. Apri [http://localhost:3000](http://localhost:3000) nel browser.
-Se non funziona, lanciarlo da amministratore
+Se non funziona bisogna lanciarlo da amministratore
