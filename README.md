@@ -28,8 +28,8 @@ Ferma il docker
 
 Durante lo sviluppo dell'applicazione, ho lavorato con due repository differenti per il backend e per il frontend, 
 questo per aiutarmi a mantenere le cose distanziate.\
-I link sono: [https://github.com/superflem/backend_exchange](https://github.com/superflem/backend_exchange) e 
-[https://github.com/superflem/frontend_exchange](https://github.com/superflem/frontend_exchange)\
+I link sono: [Backend](https://github.com/superflem/backend_exchange) e 
+[Frontend](https://github.com/superflem/frontend_exchange)\
 Se si scaricano i file di questi repository, bisogna creare il database con il codice SQL presente o usando il file di backup e modificare
 i file .env secondo le necessità.\
 In questi repository ho usato molto Git, mentre in questo un po' meno perchè ho semplicemente preso il lavoro che avevo già fatto e 
