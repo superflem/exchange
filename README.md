@@ -39,5 +39,5 @@ poterli ricevere.\
 Nelle sotto cartelle ci sono ulteriori README.md per le singole specifiche del backend e frontend.\
 Ho lavorato a questo progetto per tutto febbraio, ho anche ricevuto le credenziali del sandbox ma adesso con l'Univeristà che è ripresa 
 faccio fatica a lavorarci (sono all'ultimo semestre del terzo anno). Se il mio progetto vi aggrada, al termine delle lezioni e degli esami (me ne 
-mancano solo 3), finirò anche questa parte ed eventualmente correggerò gli errori. Grazie per l'opportunità e per il vostro tempo
+mancano solo 3), finirò anche questa parte ed eventualmente correggerò gli errori. Grazie per l'opportunità e per il vostro tempo.\
 Alex Caraffi
